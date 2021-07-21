@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <form class="form-inline" action="">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search for content...">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </nav>
+
+<div class="container">
+  <h2><b>Form: Checkbox</b></h2>
+  <p>The form below contains five checkboxes. The first two options are checked by default, the third option and the forth and fifth options are disabled:</p>
+  <form action="/action_page.php">
+    <div class="form-check">
+      <label class="form-check-label" for="check1">
+        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>Option 1
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label" for="check2">
+        <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something" checked>Option 2
+      </label>
+    </div>
+    <div class="form-check" for="check3">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input">Option 3
+      </label>
+    </div>
+    <div class="form-check">
+        <label class="form-check-label" for="check4">
+          <input type="checkbox" class="form-check-input" disabled>Option 4
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label" for="check4">
+          <input type="checkbox" class="form-check-input" disabled>Option 5
+        </label>
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<div class="container">
+    <h2><b>Products</b></h2>
+    <div class="btn-group-vertical">
+      <button type="button" class="btn btn-primary">Headsets</button>
+      <button type="button" class="btn btn-primary">Speakers</button>
+      <button type="button" class="btn btn-primary">TVs</button>
+        
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          Consoles
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">PS5</a>
+          <a class="dropdown-item" href="#">Xbox Series X</a>
+          <a class="dropdown-item" href="#">PS4</a>
+          <a class="dropdown-item" href="#">Xbox One</a>
+          <a class="dropdown-item" href="#">Nintendo Switch</a>
+          <a class="dropdown-item" href="#">Stadia</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="gg-logo.png" alt="Los Angeles" width="1000" height="500">
+        <div class="carousel-caption">
+          <h3>GG Electronics</h3>
+          <p>GG Electronics strives to bring you the best customer service for all your electronic product needs!</p>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <img src="gg-logo-crop.png" alt="Chicago" width="1000" height="500">
+        <div class="carousel-caption">
+          <h3>GG Merch</h3>
+          <p><small>We also have a seperate website dedicated to selling GG merchandise, such as t-shirts, hoodies, hats, and more!</small></p>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <img src="weeeoooweeeeooo.jpg" alt="Thank you, New York!" width="1000" height="500">
+        <div class="carousel-caption">
+          <h3>Hello New York!</h3>
+          <p>Weeeoooweeeeooo!</p>
+        </div>   
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+</body>
+</html>
