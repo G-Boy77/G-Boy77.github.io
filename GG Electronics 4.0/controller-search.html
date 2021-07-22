@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Results for: PS4 | GG Electronics</title>
+<link href="css/mystylesheet.css" rel="stylesheet" />
+<link rel="icon" type="image" href="images/gg-favicon.png"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="javascript.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="homepage.html"><img id="ggLogo" src="images/gg-electronics.png" alt="GG Electronics" width="667" height="186"/></a>
+        <a id="cartIcon" class="My Cart" href="cart.html"><img src="images/cart-icon.png" style="width:24px;height:24px;">CART</a>
+        <a id="accountIcon" class="Account" href="account.html"><img src="images/account-icon.png" style="width:24px;height:24px;" float: right>ACCOUNT</a>
+        
+    </header>
+    <div class="dropdown">
+        <button class="dropbtn">Products &#9660;</button>
+        <div class="dropdown-content">
+          <a href="#consoles">Consoles</a>
+          <a href="#headsets">Headsets</a>
+          <a href="controller-search.html">Controllers</a>
+        </div>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="topNav">
+            <form id="searchBar" action="controller-search.html">
+                <input type="text" placeholder="Search for items you're looking for..." name="search">
+                <button type="submit">&#128269;Search</button>
+              </form>
+            </div>
+      <section>
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+          <h2 class="headline">Filter By</h2>
+        </div>
+        <div class="facetHead">
+          <a class="brand" data-facet-id="brand" title="Brand">
+            Brand</a>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="PlayStation">
+            <input type="checkbox" class="form-check-input" id="PlayStation">PlayStation (14)
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="Xbox">
+            <input type="checkbox" class="form-check-input" id="Xbox">Xbox (12)
+          </label>
+        </div>
+        <div class="form-check" for="Nintendo">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" id="Nintendo">Nintendo (11)
+          </label>
+        </div>
+        <div class="form-check" for="Stadia">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" id="Stadia">Stadia (2)
+          </label>
+        </div>
+        <div class="form-check" for="Other">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" id="Other">Other (1)
+          </label>
+        </div>
+
+        <br>
+
+        <div class="facetHead">
+          <a class="price" data-facet-id="price" title="Price">
+            Price</a>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="0-25">
+            <input type="checkbox" class="form-check-input" id="0-25">$0-$25 (0)
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="25-50">
+            <input type="checkbox" class="form-check-input" id="25-50">$25-$50 (2)
+          </label>
+        </div>
+        <div class="form-check" for="50-75">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" id="50-75">$50-$75 (6)
+          </label>
+        </div>
+        <div class="form-check" for="75-100">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" id="75-100">$75-$100 (27)
+          </label>
+        </div>
+        <div class="form-check" for="100plus">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" id="100plus">$100+ (5)
+          </label>
+        </div>
+
+        <br>
+
+        <div class="facetHead">
+          <a class="rating" data-facet-id="rating" title="Rating">
+            Rating</a>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="1star">
+            <input type="checkbox" class="form-check-input" id="1star">&starf;&star;&star;&star;&star; & Up (40)
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="2star">
+            <input type="checkbox" class="form-check-input" id="2star">&starf;&starf;&star;&star;&star; & Up (37)
+          </label>
+        </div>
+        <div class="form-check" for="3star">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" id="3star">&starf;&starf;&starf;&star;&star; & Up (26)
+          </label>
+        </div>
+        <div class="form-check" for="4star">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" id="4star">&starf;&starf;&starf;&starf;&star; & Up (22)
+          </label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="showingResults">
+      <p>Showing results for "controller" (40 results)</p>
+    </div>
+
+    <!-- AJ suggested using transparent pngs -->
+
+    <div class="results">
+        <div class="controllerResults">
+          <a href="#"><img src="images/ps4-controller-white.png" width="16%"></a>
+          <a href="#"><text class="resultText">PlayStation®4 DUALSHOCK®4 Wireless Controller - Glacier White</text></a>
+          <text class="resultPrice">$74.99 CAD</text>
+          <a href="cart.html" button class="buyNow">BUY NOW</button></a>
+        </div>
+        <div class="controllerResults">
+          <a href="#"><img src="images/ps4-controller-black.png" width="16%"></a>
+          <a href="#"><text class="resultText">PlayStation®4 DUALSHOCK®4 Wireless Controller - Jet Black</text></a>
+          <text class="resultPrice">$74.99 CAD</text>
+          <a href="#" button class="buyNow">BUY NOW</button></a>
+        </div>
+        <div class="controllerResults">
+          <a href="#"><img src="images/xbox-controller-black.png" width="16%"></a>
+          <a href="#"><text class="resultText">Xbox One Wireless Controller - Carbon Black</text></a>
+          <text class="resultPrice"><b>$74.99 CAD</text>
+            <br>
+          <a href="#" button class="buyNow">BUY NOW</button></a>
+        </div>
+        <div class="controllerResults">
+          <a href="#"><img src="images/xbox-controller-blue.png" width="16%"></a>
+          <a href="#"><text class="resultText">Xbox One Wireless Controller - Shock Blue</text></a>
+          <text class="resultPrice">$74.99 CAD</text>
+            <br>
+          <a href="#" button class="buyNow">BUY NOW</button></a>
+        </div>
+        <br>
+        <div class="controllerResults">
+          <a href="#"><img src="images/nintendo-controller.png" width="16%"></a>
+          <a href="#"><text class="resultText">Nintendo Switch™ Pro Controller - Black</text></a>
+          <text class="resultPrice">$89.99 CAD</text>
+            <br>
+          <a href="#" button class="buyNow">BUY NOW</button></a>
+        </div>
+        <div class="pages">
+
+        </div>
+    </div>
+      
+    </section>
+</body>
+    <footer>&#169; Copyright 2021-2021 GG Electronics Inc. All rights reserved.</footer>
+</html>
