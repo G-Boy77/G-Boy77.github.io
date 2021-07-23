@@ -3,14 +3,17 @@
 <head>
 
 <meta charset="utf-8" />
+<meta name="description" content="Electronics Website">
+<meta name="keywords" content="ps4, xbox, nintendo, controller, speaker, tv, keyboard, headset, hyperx">
+<meta name="author" content="Glace Pritchard">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Order Payment | GG Electronics</title>
 <link href="css/mystylesheet.css" rel="stylesheet" />
-<link rel="icon" type="image" href="images/gg-favicon.png"/>
+<link rel="shortcut icon" type="image/png" href="images/gg-favicon.png"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="javascript.js"></script>
+  <script src="js/javascript.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600&display=swap" rel="stylesheet">
@@ -18,9 +21,9 @@
 <body>
     <header>
         <a href="homepage.html"><img id="ggLogo" src="images/gg-electronics.png" alt="GG Electronics" width="667" height="186"/></a>
-        <a id="cartIcon" class="My Cart" href="cart.html"><img src="images/cart-icon.png" style="width:24px;height:24px;">CART</a>
-        <a id="accountIcon" class="Account" href="account.html"><img src="images/account-icon.png" style="width:24px;height:24px;" float: right>ACCOUNT</a>
-        
+        <a id="cartIcon" class="My Cart" href="cart.html"><img src="images/cart-icon.png" alt="My Cart" style="width:24px;height:24px;">CART</a>
+        <a id="accountIcon" class="Account" href="account.html"><img src="images/account-icon.png" alt="Account" style="width:24px;height:24px;">ACCOUNT</a>
+        <a id="aboutIcon" class="About Us" href="about_us.html"><img src="images/info-icon.png" alt="About Us" style="width:24px;height:24px;">ABOUT US</a>
     </header>
     <div class="dropdown">
         <button class="dropbtn">Products &#9660;</button>
@@ -37,3 +40,92 @@
                 <button type="submit">&#128269;Search</button>
               </form>
             </div>
+
+            <fieldset class="billing">
+                <legend id="paymentLegend">Billing Information (required)</legend>
+                    <label>First Name</label><br>
+                    <input type="text" required="required"/><br>
+
+                    <label>Last Name</label><br>
+                    <input type="text" required="required"/><br>
+
+                    <label>Street Address</label><br>
+                    <input type="text" required="required"/><br>
+
+                    <label>Street Address (2)</label><br>
+                    <input type="text"/><br>
+
+                    <label>City</label><br>
+                    <input type="text" required="required"/><br>
+
+                    <label>Province</label><br>
+                    <input type="text" required="required">   <br>  
+
+                    <label>Postal Code</label><br>
+                    <input type="text" required="required" pattern="^\d{5}(-\d{4})?$"/><br>
+
+                    <label>Country</label><br>
+                    <input type="text" required="required" value="Canada"/><br>
+
+                    <label>Phone</label><br>
+                    <input type="tel" required="required" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/><br>
+
+                    <datalist>Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador, Northwest Territories, Nova Scotia, Nunavut, Ontario, Prince Edward Island, Quebec, Saskatchewan, Yukon</datalist>
+            
+                <label>Credit Card (required)</label>
+                  <fieldset>
+                     <label class="cardLabel">
+                        <input type="radio" name="cCard"><img src="images/sb_amex.png" alt="Amex">
+                     </label>
+                     <label class="cardLabel">
+                        <input type="radio" name="cCard"><img src="images/sb_discover.png" alt="Discover">
+                     </label>
+                     <label class="cardLabel">
+                        <input type="radio" name="cCard"><img src="images/sb_master.png" alt="MasterCard">
+                     </label>
+                     <label class="cardLabel">
+                        <input type="radio" name="cCard"><img src="images/sb_visa.png" alt="Visa">
+                     </label>
+                  </fieldset>
+
+                  <label>Credit Card Number</label><br>
+                  <input required="required" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"/><br>
+
+                  <label>Expiration Date</label><br>
+                  <select required="required">
+                     <option value="--Month--">--Month--</option>
+                     <option value="January (01)">January (01)</option>
+                     <option value="February (02)">February (02)</option>
+                     <option value="March (03)">March (03)</option>
+                     <option value="April (04)">April (04)</option>
+                     <option value="May (05)">May (05)</option>
+                     <option value="June (06)">June (06)</option>
+                     <option value="July (07)">July (07)</option>
+                     <option value="August (08)">August (08)</option>
+                     <option value="September (09)">September (09)</option>
+                     <option value="October (10)">October (10)</option>
+                     <option value="November (11)">November (11)</option>
+                     <option value="December (12)">December (12)</option>
+                  </select>
+                  <select required="required">
+                     <option value="--Year--">Year</option>
+                     <option value="2021">2021</option>
+                     <option value="2022">2022</option>
+                     <option value="2023">2023</option>
+                     <option value="2024">2024</option>
+                     <option value="2025">2025</option>
+                  </select><br>
+                  
+                     <label>CSC</label><br>
+                        <input pattern="^\d{3}$" maxlength="3" placeholder="nnn" required="required"/>
+                  
+            </fieldset>
+
+            <button class="submitButton" type="submit" onclick="location.href= 'thankyou.html';">Place Order</button>
+
+
+
+<br><br><br><br><br><br><br><br>
+<footer><br>&#169; Copyright 2021-2021 GG Electronics Inc. All rights reserved.</footer>
+</body>
+</html>

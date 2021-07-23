@@ -3,10 +3,13 @@
 <head>
 
 <meta charset="utf-8" />
+<meta name="description" content="Electronics Website">
+<meta name="keywords" content="ps4, xbox, nintendo, controller, speaker, tv, keyboard, headset, hyperx">
+<meta name="author" content="Glace Pritchard">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>GG Electronics</title>
 <link href="css/mystylesheet.css" rel="stylesheet" />
-<link rel="icon" type="image" href="images/gg-favicon.png"/>
+<link rel="shortcut icon" type="image/png" href="images/gg-favicon.png"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -18,8 +21,9 @@
 <body>
     <header>
         <a href="homepage.html"><img id="ggLogo" src="images/gg-electronics.png" alt="GG Electronics" width="667" height="186"/></a>
-        <a id="cartIcon" class="My Cart" href="cart.html"><img src="images/cart-icon.png" style="width:24px;height:24px;">CART</a>
-        <a id="accountIcon" class="Account" href="account.html"><img src="images/account-icon.png" style="width:24px;height:24px;" float: right>ACCOUNT</a>
+        <a id="cartIcon" class="My Cart" href="cart.html"><img src="images/cart-icon.png" alt="My Cart" style="width:24px;height:24px;">CART</a>
+        <a id="accountIcon" class="Account" href="account.html"><img src="images/account-icon.png" alt="Account" style="width:24px;height:24px;">ACCOUNT</a>
+        <a id="aboutIcon" class="Account" href="about_us.html"><img src="images/info-icon.png" alt="About Us" style="width:24px;height:24px;">ABOUT US</a>
         
     </header>
     <div class="dropdown">
@@ -40,26 +44,50 @@
       
             <!-- Slideshow container -->
 
-
+            <section id="home">
 <div id="slideshow">
     <div class="ps4">
-      <img src="images/ps4-pro.jpg" width="100%" height="90%">
+      <img class="slidePS4" src="images/ps4-pro.jpg" alt="PS4 Pro">
       <div class="text" id="ps4">PS4 Pro</div>
     </div>
     <div class="hyperx">
-      <img src="images/hyperx-cloud-revolver-s.jpg" width="100%" height="90%">
+      <img class="slideHyperX" src="images/hyperx-cloud-revolver-s.jpg" alt="HyperX Cloud Revolver S">
       <div class="text" id="hyperx">HyperX Cloud Revolver S</div>
     </div>
     <div class="xbox">
-      <img src="images/Xbox-One.jpg" width="100%" height="90%">
-      <div class="text">Xbox One</div>
+      <img class="slideXbox" src="images/Xbox-One.jpg" alt="Xbox One">
+      <div class="text" id="xbox">Xbox One</div>
     </div>
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
   
+        <!--Deals-->
 
+<div class="dealSection">
+  <div class="deals">
+    <a href="#"><img src="images/wonderboom.png" alt="Wonderboom Speaker" width="120"></a>
+    <a href="#"><text class="dealsText">Ultimate Ears WONDERBOOM Speaker</text></a>
+    <text class="dealsPriceTop">$69.99 CAD</text>
+  </div>
+  <br>
+  <div class="deals">
+    <a href="#"><img src="images/razer-huntsman.png" alt="Razer Huntsman Keyboard" width="120"></a>
+    <a href="#"><text class="dealsText">Razer Huntsman - Opto-Mechanical Gaming Keyboard</text></a>
+    <text class="dealsPrice">$149.99 CAD</text>
+  </div>
+  <br>
+  <div class="deals">
+    <a href="#"><img src="images/RCA-50inch-TV.png" alt="RCA 50-inch TV" width="120"></a>
+    <a href="#"><text class="dealsText">RCA 50” 4K UHD Smart TV</text></a>
+    <text class="dealsPrice">$414.99 CAD</text>
+    </div>
+</div>
+
+</section>
+<br><br><br><br><br><br><br><br>
+<footer><br>&#169; Copyright 2021-2021 GG Electronics Inc. All rights reserved.</footer>
 </body>
-    <footer>&#169; Copyright 2021-2021 GG Electronics Inc. All rights reserved.</footer>
+  
 </html>
